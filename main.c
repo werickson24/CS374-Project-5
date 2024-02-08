@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
   if(validate_arguments(argc, argv)){
     printf("Arguments invalid\n");
   }else{
-    printf("Arguments valid\n");
+    //printf("Arguments valid\n");
     argument_parser(argc, argv);
   }
   return 0;
@@ -21,7 +21,6 @@ int main(int argc, char *argv[]){
 
 int argument_parser(int argc, char *argv[]){
   char *arg = NULL;
-  //int error_state = 0;
   struct node * head = NULL;
   struct node ** list_head = &head;
 
